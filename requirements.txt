@@ -1,0 +1,4 @@
+# The only hard dependency.
+torch>=2.0
+# Optional: attention_viz.py falls back to ASCII heatmaps without it.
+matplotlib>=3.5
