@@ -30,7 +30,7 @@ from model import Transformer
 
 
 def load(checkpoint):
-    ckpt = torch.load(checkpoint, map_location="cpu", weights_only=False)
+    ckpt = torch.load(checkpoint, map_location="cpu", weights_only=True)
     cfg = ckpt["config"]
     model = Transformer(
         vocab_size=ckpt["vocab_size"], n_embd=cfg["n_embd"], n_head=cfg["n_head"],
